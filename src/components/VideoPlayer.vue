@@ -80,5 +80,7 @@ export default {
 </script>
 
 <style scoped>
-
+  .thumbnail {
+    display: flex;
+  }
 </style>
