@@ -6,7 +6,7 @@
       <h3> {{this.activeVideo.title}} </h3>
       <div class="row">
         <p>{{this.activeVideo.views}} views</p>
-        <p>{{this.activeVideo.likes}} <button>Like</button></p>
+        <p>{{this.activeVideo.likes}} <button @click="addLike">Like</button></p>
       </div>
     </div>
     <div class="video-list">
@@ -90,6 +90,9 @@ export default {
     chooseVideo (video) {
       this.activeVideo = video
       video.views += 1
+    },
+    addLike () {
+      this.activeVideo.likes += 1;
     }
   }
 }
