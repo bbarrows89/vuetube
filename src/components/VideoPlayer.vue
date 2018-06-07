@@ -5,9 +5,11 @@
 </template>
 
 <script>
+const videos = [];
+
 export default {
   name: 'VideoPlayer',
-  data() {
+  data () {
     return {
 
     }
