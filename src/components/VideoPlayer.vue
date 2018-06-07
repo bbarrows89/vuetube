@@ -92,7 +92,7 @@ export default {
       video.views += 1
     },
     addLike () {
-      this.activeVideo.likes += 1;
+      this.activeVideo.likes += 1
     }
   }
 }
