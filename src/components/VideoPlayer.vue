@@ -83,4 +83,27 @@ export default {
   .thumbnail {
     display: flex;
   }
+
+  .thumbnail img {
+    width: 170px;
+  }
+
+  .thumbnail-info {
+    margin-left: 20px;
+  }
+
+  .thumbnail h3 {
+    font-size: 16px;
+  }
+
+  h3,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .thumbnail-views {
+    font-size: 14px;
+  }
+
 </style>
