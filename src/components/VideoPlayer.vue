@@ -116,4 +116,25 @@ export default {
     font-size: 14px;
   }
 
+  .video-player {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+  }
+
+  .video-container {
+    margin-right: 40px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  button {
+    background: #D0021B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+  }
 </style>
