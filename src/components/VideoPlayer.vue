@@ -1,6 +1,17 @@
 <template>
   <div class="video-player">
-    Welcome to VueTube
+    <div class="video-list">
+      <div :key="video.id" v-for="video in videos" class="thumbnail">
+        <div class="thumbnail-img">
+          <img :src="video.thumbnail" />
+        </div>
+        <div class="thumbnail-info">
+          <h3> {{video.title}} </h3>
+          <p> {{video.creator}} </p>
+          <p class="thumbnail-views"> {{video.views}} Views</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -14,7 +25,7 @@ const videos = [
     youtubeURL: 'https://www.youtube.com/embed/SUVFqvIKSDA',
     creator: 'Associated Press',
     likes: 0,
-    views: 0,
+    views: 0
   },
   {
     id: 2,
@@ -24,7 +35,7 @@ const videos = [
     youtubeURL: 'https://www.youtube.com/embed/P9LNSBqd1Fk',
     creator: 'Joseph Vincent',
     likes: 0,
-    views: 0,
+    views: 0
   },
   {
     id: 3,
@@ -34,7 +45,7 @@ const videos = [
     youtubeURL: 'https://www.youtube.com/embed/eP8KXfB_zHg',
     creator: 'TheGOON Productions',
     likes: 0,
-    views: 0,
+    views: 0
   },
   {
     id: 4,
@@ -44,7 +55,7 @@ const videos = [
     youtubeURL: 'https://www.youtube.com/embed/F8SBJzOEcyU',
     creator: 'MLB',
     likes: 788,
-    views: 196076,
+    views: 196076
   },
   {
     id: 5,
@@ -54,16 +65,15 @@ const videos = [
     youtubeURL: 'https://www.youtube.com/embed/i_a2KPCzKWw',
     creator: 'Dunkman 827',
     likes: 917,
-    views: 206059,
-  },
-
-];
+    views: 206059
+  }
+]
 
 export default {
   name: 'VideoPlayer',
   data () {
     return {
-
+      videos
     }
   }
 }
