@@ -1,24 +1,24 @@
 <template>
   <div id="app">
-    <img style="width:140px; margin:14px;" src="./assets/logo.png"/>
+    <img style="width:140px; margin:14px;" src="@/assets/logo.png">
     <VideoPlayer/>
   </div>
 </template>
 
 <script>
-import VideoPlayer from './components/VideoPlayer'
+import VideoPlayer from "@/views/VideoPlayer";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     VideoPlayer
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
